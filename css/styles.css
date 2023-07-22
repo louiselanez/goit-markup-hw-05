@@ -9,6 +9,9 @@
   --navwhite: white;
   --navcloud: #f4f4fd;
   --navcornflower: #e7e9fc;
+  --navwhite: white;
+  --navcloud: #f4f4fd;
+  --navcornflower: #e7e9fc;
 }
 
 body {
@@ -54,13 +57,19 @@ body {
 
 .list {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
 }
 
 .nav-menu .page:hover,
 .nav-menu .page:focus,
 .nav-menu .page.current,
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
+.contacts-menu .contact:hover,
+.contacts-menu .contact:focus {
   color: var(--iriscolor);
 }
 
@@ -76,7 +85,7 @@ body {
   background-color: var(--navcloud);
 }
 
-.contacts-menu .item {
+.contacts-menu .contact {
   text-decoration: none;
   line-height: 1.14;
   font-weight: 400;
@@ -217,4 +226,69 @@ body {
 .project {
   text-decoration: none;
   color: var(--navyblue);
+}
+
+.container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-header .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--navcornflower);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.studio-container {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  gap: 30px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.what-container {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  gap: 75px;
+}
+
+.container {
+  margin-left: 130px;
+}
+
+
+.projects .substrate{
+  display: flex;
+  gap: 25px;
+}
+
+.item {
+  border-bottom: 0px solid var(--navcornflower);
+  background: var(--navwhite);
+}
+
+.project-card {
+  border: 1px solid var(--navcornflower);
+  padding: 0px;
 }
