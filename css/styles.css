@@ -21,6 +21,26 @@ body {
   color: var(--navslate);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 .logo-link {
   text-decoration: none;
   font-size: 0;
@@ -53,6 +73,7 @@ body {
   line-height: 1.14;
   color: var(--navyblue);
   letter-spacing: 0.02em;
+  margin-left: 30px;
 }
 
 .list {
@@ -163,6 +184,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--navyblue);
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 .team .position {
@@ -170,6 +193,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .page-footer.bg-footer {
@@ -231,6 +255,10 @@ body {
 .container {
   padding-top: 120px;
   padding-bottom: 120px;
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .page-header .container {
@@ -273,22 +301,14 @@ body {
   gap: 75px;
 }
 
-.container {
-  margin-left: 130px;
-}
-
-
-.projects .substrate{
-  display: flex;
-  gap: 25px;
-}
-
 .item {
   border-bottom: 0px solid var(--navcornflower);
   background: var(--navwhite);
+  margin-left: 20px;
 }
 
 .project-card {
   border: 1px solid var(--navcornflower);
   padding: 0px;
+  width: calc(100% - 60px / 5);
 }
