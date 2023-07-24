@@ -243,7 +243,7 @@ img {
 
 .project .type {
   color: var(--navslate);
-  font-weight: 400;
+  font-weight: 400px;
   line-height: 1.87;
 }
 
@@ -311,4 +311,15 @@ img {
   border: 1px solid var(--navcornflower);
   padding: 0px;
   width: calc(100% - 60px / 5);
+}
+
+.projects {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.project img {
+  width: 100%;
 }
